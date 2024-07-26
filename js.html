@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // let saldoAkhir = prompt('masukan saldo akhir anda');
+
+    // if (saldoAkhir == null ){
+    //     saldoAkhir = 'kosong';
+    // }
+    // alert(`saldo akhir anda adalah ${saldoAkhir}`);
+
+    let hari = new Date().getDay();
+    switch(hari){
+        case  1:
+           hari = 'hari senin';
+         break;
+        case  2:
+           hari = 'hari selasa';
+         break;
+        case  3:
+           hari = 'hari rabu';
+         break;
+        case  4:
+           hari = 'hari kamis';
+         break;
+        case  5:
+           hari = 'hari jumat';
+         break;
+        case  6:
+           hari = 'hari sabtu';
+         break;
+         default :
+           hari = 'minggu'
+        break ;
+    }
+    console.log(`hari ini adalah ${hari}` );
+
+
+
+    //luas lingkaran
+    function luasLingkaran(R){
+      const V = 3.14;
+      let Luas = V * R * R ;
+      console.log(`luas lingkaran adalah ${Luas}`);
+    }
+    luasLingkaran(7);
+
+
+    //luas persegi panjang
+    function LuasPersegiPanjang(panjang, lebar){
+      let LuasPersegiPanjang = panjang * lebar ;
+      console.log(`luas persegi panjang adalah ${LuasPersegiPanjang}`)
+    }
+    LuasPersegiPanjang(20,20);
+
+
+    //luas segitga
+    function LuasSegiTiga(atas,tinggi){
+      const rumus = 1/2;
+      let LuasSegiTiga = rumus * (atas * tinggi );
+      console.log(`luas segitiga adalah ${LuasSegiTiga}`);
+    }
+    LuasSegiTiga(12,15);
+
+    //luas jajargenjang 
+    function luasjajargenjang(alas,tinggi){
+      let luasjajargenjang = alas * tinggi ;
+      console.log(`luas jajargenjang adalah ${luasjajargenjang}`);
+    }
+    luasjajargenjang(20,15);
+
+    //gaji karyawan
+    function gajiKaryawan(nama,masukKerja){
+      let gaji = 100 * masukKerja ;
+      console.log(`total gajian ${nama} adalah ${gaji}`);
+    }
+    gajiKaryawan('apud' , 28);
+
+    //tugas loop
+    const x = [3,5,12];
+    let hasil = 0;
+    for(let i = 0; i < x.length; i++){
+      hasil += x[i];
+    }
+    console.log(hasil);
+</script>

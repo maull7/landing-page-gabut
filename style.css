@@ -1,0 +1,95 @@
+:root{
+    --primary-color : #007bff ;
+    --shadow-card : 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+img .img {
+    width : 50px ;
+    height : 50px ;
+}
+#home h1 {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+#home a {
+    text-decoration: none;
+}
+#home button.btn-header {
+    border-radius: 50px ;
+}
+#home button.btn-header::hover {
+    background-color: blue;
+}
+#home button.btn-get,
+#keuntungan button.btn-promo {
+    background-color: white;
+    border : 2px solid #007bff;
+    margin-left : 15px ;
+    border-radius: 50px ;
+    color : var(--primary-color);
+    
+}
+#home button.btn-get a {
+    color : #007bff;
+}
+#home button.btn-get a:hover {
+    color : white;
+}
+#home button.btn-get:hover {
+    background-color: var(--primary-color);
+    border : 2px solid white;
+}
+#keuntungan button.btn-promo:hover {
+    background-color: var(--primary-color);
+    border : 2px solid white;
+    color : white ;
+}
+#profile p {
+    font-size: 15px;
+    font-weight: 500;
+}
+#profile div.profile  {
+    margin-top : 70px ;
+    /* box-shadow :  0 5px 10px rgba(9, 198, 255, 0.3); */
+}
+#profile .card {
+    background-color: white;
+    box-shadow:  0 4px 8px rgba(169, 178, 187, 0.151);
+}
+#profile .card:hover{
+    box-shadow: var(--shadow-card);
+    background-color: white;
+}
+#profile .card h5 {
+ color : black ;
+}
+#profile h2 {
+    font-size : 40px ;
+}
+#promo i {
+    text-decoration:line-through;
+}
+#promo .card {
+    box-shadow: var(--shadow-card);
+}
+#keuntungan ul li {
+    list-style: none;
+    font-size : 20px ;
+    font-style: italic;
+}
+#footer {
+    background-image: linear-gradient(45deg, rgba(187, 187, 187,0.04) 0%, rgba(187, 187, 187,0.04) 50%,rgba(86, 86, 86,0.04) 50%, rgba(86, 86, 86,0.04) 100%),linear-gradient(135deg, rgba(166, 166, 166,0.04) 0%, rgba(166, 166, 166,0.04) 50%,rgba(92, 92, 92,0.04) 50%, rgba(92, 92, 92,0.04) 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20)); background-size: 142px 142px;
+}
+#footer ul li {
+    list-style-type: none;
+    color : white ;
+    font-size: 20px;
+
+}
